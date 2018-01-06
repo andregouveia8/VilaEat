@@ -1,0 +1,140 @@
+/*ALTERA A COR DE FUNDO DA NAVBAR*/
+
+.navbar {
+  background-color: #E5E5E5;
+}
+
+
+/*CENTRA A NABVAR NO SMARTPHONE*/
+
+@media only screen and (max-width: 768px) {
+  .navbar .navbar-brand {
+    padding: 0px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+  .navbar .navbar-brand>img {
+    height: 100%;
+    width: auto;
+    padding: 7px 14px;
+  }
+}
+
+
+/*CENTRA A BRAND DA NAVBAR*/
+
+.navbar .navbar-brand {
+  background: url(../images/brand_logo.png) center / contain no-repeat;
+  width: 175px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+
+/*FORM'S LOGIN*/
+
+#div_auth {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#div_form {
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+/*FOOTER RESPONSIVO*/
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*ACERTA ICONS DAS REDES SOCIAIS (TAMANHO, ESPAÇAMENTO, ETC)*/
+
+#redes_sociais {
+  height: 50px;
+}
+
+.facebook img,
+.instagram img,
+.twitter img {
+  height: 100%;
+  width: auto;
+  padding: 7px 0px;
+}
+
+
+/*ALTERA COR DA BRAND/SÍMBOLOS AO PASSAR O RATO POR CIMA*/
+
+.navbar-brand img:hover,
+.facebook img:hover,
+.instagram img:hover,
+.twitter img:hover {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
+/*MAPA GOOGLE*/
+#map {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*OPÇÕES CENTRAR - CLASSE*/
+.vertical-center {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+/*OVERRIDE BOOTSTRAP*/
+.btn-info {
+  background-color: #46bcec;
+}
+
+.label-default {
+  background-color: #46BCEC;
+}
+
+.label-info {
+  background-color: #00637C;
+}
+
+/*CENTRAR MODAL*/
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
